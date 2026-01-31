@@ -1,7 +1,7 @@
 # Playwright Test Automation - SwiftTranslator
 
 ## Student Information
-**Name:** Detunu Wijeratne  
+**Name:** Wijeratne W.M.D.N
 **Registration Number:** IT23566798  
 **Assignment:** IT3040 - ITPM Assignment 1  
 
@@ -83,16 +83,19 @@ ITPM ASSIGNMENT
 ## Test Categories
 
 ✅ Positive Functional Tests: 24 test cases
+
 ❌ Negative Functional Tests: 10 test cases
+
 🎨 UI Test: 1 test case
+
 ✅ Total: 35 automated test cases
 
 ## Notes
 
-:Tests execute on the Chromium browser by default.
-:An HTML test report is automatically generated after execution.
-:Screenshots are captured on test failures to assist with debugging.
-:The framework is designed to be scalable for future test enhancements.
+: Tests execute on the Chromium browser by default.
+: An HTML test report is automatically generated after execution.
+: Screenshots are captured on test failures to assist with debugging.
+: The framework is designed to be scalable for future test enhancements.
 
 
 
