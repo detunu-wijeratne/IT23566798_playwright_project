@@ -1,32 +1,33 @@
 const { test, expect } = require('@playwright/test');
 
 const passTestCases = [
-  { id: 'Pos_Fun_0001', input: 'mata bath oonee.', expected: 'මට බත් ඕනේ.' },
-  { id: 'Pos_Fun_0002', input: 'api paasal yanavaa.', expected: 'අපි පාසල් යනවා.' },
-  { id: 'Pos_Fun_0003', input: 'api kaeema kanna yanavaa saha chithrapatayak balanavaa.', expected: 'අපි කෑම කන්න යනවා සහ චිත්‍රපටයක් බලනවා.' },
-  { id: 'Pos_Fun_0004', input: 'oya enavaanam mama balan innavaa.', expected: 'ඔය එනවානම් මම බලන් ඉන්නවා.' },
-  { id: 'Pos_Fun_0005', input: 'meeka hariyata vaeda karanavaadha?', expected: 'මේක හරියට වැඩ කරනවාද?' },
-  { id: 'Pos_Fun_0006', input: 'vahaama enna.', expected: 'වහාම එන්න.' },
-  { id: 'Pos_Fun_0007', input: 'mama ehema karannee naehae.', expected: 'මම එහෙම කරන්නේ නැහැ.' },
-  { id: 'Pos_Fun_0008', input: 'suba udhaeesanak!', expected: 'සුබ උදෑසනක්!' },
-  { id: 'Pos_Fun_0009', input: 'karuNaakaralaa eka poddak balanna.', expected: 'කරුණාකරලා ඒක පොඩ්ඩක් බලන්න.' },
-  { id: 'Pos_Fun_0010', input: 'samaavenna, eeka athvaeradhiimak.', expected: 'සමාවෙන්න, ඒක අත්වැරදීමක්.' },
-  { id: 'Pos_Fun_0011', input: 'eeyi, ooka dhiyan.', expected: 'ඒයි, ඕක දියන්.' },
-  { id: 'Pos_Fun_0012', input: 'mata nidhimathayi.', expected: 'මට නිදිමතයි.' },
-  { id: 'Pos_Fun_0013', input: 'gihin enna.', expected: 'ගිහින් එන්න.' },
+  { id: 'Pos_Fun_0001', input: 'mata kiri oonee.', expected: 'මට කිරි ඕනේ.' },
+  { id: 'Pos_Fun_0002', input: 'api panthi yanavaa.', expected: 'අපි පන්ති යනවා.' },
+  { id: 'Pos_Fun_0003', input: 'api thea bonavaa saha paan kanavaa.', expected: 'අපි තේ බොනවා සහ පාන් කනවා.' },
+  { id: 'Pos_Fun_0004', input: 'oya kathaa karanavanam mama ahan innavaa.', expected: 'ඔය කතා කරනවනම් මම අහන් ඉන්නවා.' },
+  { id: 'Pos_Fun_0005', input: 'oyaa meeka hoDHAyi kiyalaa hithanavadha?', expected: 'ඔයා මේක හොඳයි කියලා හිතනවද?' },
+  { id: 'Pos_Fun_0006', input: 'ikmanata yanna', expected: 'ඉක්මනට යන්න' },
+  { id: 'Pos_Fun_0007', input: 'mama oyaata kathaa karanne naehae.', expected: 'මම ඔයාට කතා කරන්නේ නැහැ.' },
+  { id: 'Pos_Fun_0008', input: 'suBha sanDhYaavak!', expected: 'සුභ සන්ධ්‍යාවක්!' },
+  { id: 'Pos_Fun_0009', input: 'karuNaakaralaa mata poddak udhav karanna.', expected: 'කරුණාකරලා මට පොඩ්ඩක් උදව් කරන්න.' },
+  { id: 'Pos_Fun_0010', input: 'samaavenna, mama hithuve naethuva kivvaa.', expected: 'සමාවෙන්න, මම හිතුවෙ නැතුව කිව්වා.' },
+  { id: 'Pos_Fun_0011', input: 'meka dhaapan, kohomahari.', expected: 'මෙක දාපන්, කොහොමහරි.' },
+  { id: 'Pos_Fun_0012', input: 'mata dhukayi.', expected: 'මට දුකයි.' },
+  { id: 'Pos_Fun_0013', input: 'aayeth enna .', expected: 'ආයෙත් එන්න .' },
   { id: 'Pos_Fun_0014', input: 'hari hari', expected: 'හරි හරි' },
-  { id: 'Pos_Fun_0015', input: 'mama iiyee gedhara giyaa.', expected: 'මම ඊයේ ගෙදර ගියා.' },
-  { id: 'Pos_Fun_0016', input: 'api iiLaGa sathiyee yamu.', expected: 'අපි ඊළඟ සතියේ යමු.' },
-  { id: 'Pos_Fun_0017', input: 'oyaalaa enavadha?', expected: 'ඔයාලා එනවාද?' },
+  { id: 'Pos_Fun_0015', input: 'mama iiyee paarata giyaa.', expected: 'මම ඊයේ පාරට ගියා.' },
+  { id: 'Pos_Fun_0016', input: 'api heta yamu.', expected: 'අපි හෙට  යමු.' },
+  { id: 'Pos_Fun_0017', input: 'oyaalaa gihin innavadha?', expected: 'ඔයාලා ගිහින් ඉන්නවද?' },
   { id: 'Pos_Fun_0018', input: 'WiFi password eka dhenna.', expected: 'WiFi password එක දෙන්න.' },
-  { id: 'Pos_Fun_0019', input: 'siiyaa Colombo yanna hadhannee.', expected: 'සීයා Colombo යන්න හදන්නේ.' },
+  { id: 'Pos_Fun_0019', input: 'malli  Colombo yanna hadhannee.', expected: 'මල්ලි  Colombo යන්න හදන්නේ.' },
   { id: 'Pos_Fun_0020', input: 'NIC eka dhenna.', expected: 'NIC එක දෙන්න.' },
-  { id: 'Pos_Fun_0021', input: 'Rs. 5343', expected: 'Rs. 5343' },
-  { id: 'Pos_Fun_0022', input: 'mama gedhara yanavaa.', expected: 'මම ගෙදර යනවා.' },
+  { id: 'Pos_Fun_0021', input: 'Rs. 5345', expected: 'Rs. 5345' },
+  { id: 'Pos_Fun_0022', input: 'mama  paasalata    yanavaa.', expected: 'මම පාසලට  යනවා.' },
   { id: 'Pos_Fun_0023', input: 'ela machan! supiri!!', expected: 'එල මචන්! සුපිරි!! යනවා.' },
-  { id: 'Pos_Fun_0024', input: 'dhitvaa suLi kuNaatuva samaGa...', expected: 'දිට්වා සුළි කුණාටුව සමඟ...' },
+  { id: 'Pos_Fun_0024', input: 'ditvaa suLi kuNaatuvath samaGA aethi vuu aapadhaa thaththvaya heethuven maarga sQQvarDhana aDhikaariyata ayath maarga 430 k pamaNa vinaasha vii aethi athara, eevaayee muLu dhiga kiloomiitar 300 k pamaNa bava amaathYA bimal rathnaayaka mahathaa paevasiiya.', expected: 'ඩිට්වා සුළි කුණාටුවත් සමඟ ඇති වූ ආපදා තත්ත්වය හේතුවෙන් මාර්ග සංවර්ධන අධිකාරියට අයත් මාර්ග 430 ක් පමණ විනාශ වී ඇති අතර, ඒවායේ මුළු දිග කිලෝමීටර් 300 ක් පමණ බව අමාත්‍ය බිමල් රත්නායක මහතා පැවසීය.' },
   { id: 'Pos_Fun_0025', input: 'bohoma sthuthi!', expected: 'බොහොම ස්තුති!' }
 ];
+
 
 
 const failTestCases = [
@@ -80,7 +81,7 @@ test.describe('Singlish → Sinhala Transliteration', () => {
       // 2) Try to find the translation inside the nearby UI block (prefer elements close to the "Sinhala" label)
       const label = page.locator('text=Sinhala').first();
       if (await label.count() > 0) {
-        // walk up parent chain to find a container that also contains the input textarea
+        
         let el = label;
         for (let depth = 0; depth < 6; depth++) {
           const parent = el.locator('xpath=..').first();
@@ -92,7 +93,7 @@ test.describe('Singlish → Sinhala Transliteration', () => {
               const txt = (await candidate.textContent()) || '';
               const trimmed = txt.trim();
               if (trimmed.length > 1 && trimmed.length < 200 && !/Features|Suggestions|Word Autocorrect/.test(trimmed)) {
-                // Prefer candidates that are positioned to the right of the input area (likely output column)
+                
                 try {
                   const inputBox = await inputArea.boundingBox();
                   const cb = await candidate.boundingBox();
