@@ -1,53 +1,53 @@
 TC ID	Test case name	Input length type	Input	Expected output	Actual output	Status	Accuracy justification/ Description of issue type	What is covered by the test
-Pos_Fun_0001	Basic Daily Sentence	S	mata bath oonee.	මට බත් ඕනේ.	මට බත් ඕනේ.	Pass	· The core meaning of the request is fully preserved	· Daily language usage
+Pos_Fun_0001	Basic Daily Sentence	S	mata kiri oonee.  	මට කිරි ඕනේ.	මට කිරි ඕනේ.	Pass	· The core meaning of the request is fully preserved	· Daily language usage
 							· Sinhala modifiers (Pilla) are applied correctly.	· Simple sentence
 							·The full stop is maintained at the end.	· S (≤30 characters)
 								· Accuracy validation
-Pos_Fun_0002	Plural Subject Handling	S	api paasal yanavaa.	අපි පාසල් යනවා.	අපි පාසල් යනවා.	Pass	·The plural pronoun "api" is correctly transliterated.	·   Plural subject form
+Pos_Fun_0002	Plural Subject Handling	S	api panthi yanavaa.  	අපි පන්ති යනවා.  	අපි පන්ති යනවා.  	Pass	·The plural pronoun "api" is correctly transliterated.	·   Plural subject form
 							·The verb ending matches the plural subject.	·  Verb-subject agreement
 							·  Spelling of "paasal" is orthographically correct.	·  S (≤30 characters)
 								·   Accuracy validation
-Pos_Fun_0003	Compound sentence with conjunction	M	api kaeema kanna yanavaa saha chithrapatayak balanavaa.	අපි කෑම කන්න යනවා සහ චිත්‍රපටයක් බලනවා.	අපි කෑම කන්න යනවා සහ චිත්‍රපටයක් බලනවා.	Pass	· The conjunction "saha" is accurately placed.	·   Word combination / phrase pattern
+Pos_Fun_0003	Compound sentence with conjunction	M	api thea bonavaa saha paan kanavaa.	අපි තේ බොනවා සහ පාන් කනවා.	අපි තේ බොනවා සහ පාන් කනවා.	Pass	· The conjunction "saha" is accurately placed.	·   Word combination / phrase pattern
 							· Both clauses maintain independent meanings.	·  Compound sentence
 							· Word segmentation is precise.	·   M (31–299 characters)
 								·   Accuracy validation
-Pos_Fun_0004	Conditional complex sentence	M	oya enavaanam mama balan innavaa.	ඔය එනවානම් මම බලන් ඉන්නවා.	ඔය එනවානම් මම බලන් ඉන්නවා.	Pass	· Sinhala output appears in real-time conversion.	·   Daily language usage
+Pos_Fun_0004	Conditional complex sentence	M	oya kathaa karanavanam mama ahan innavaa. 	ඔය කතා කරනවනම් මම අහන් ඉන්නවා.  	ඔය කතා කරනවනම් මම අහන් ඉන්නවා.  	Pass	· Sinhala output appears in real-time conversion.	·   Daily language usage
 							· Relationship between clauses is preserved.	·   Complex sentence
 							· Subject-verb agreement is maintained.	·   M (31–299 characters)
 								·   Accuracy validation
-Pos_Fun_0005	Interrogative question phrase	S	meeka hariyata vaeda karanavaadha?	මේක හරියට වැඩ කරනවාද?	මේක හරියට වැඩ කරනවාද?	Pass	·Question suffix "-dha" is correctly attached.	·   Daily language usage
+Pos_Fun_0005	Interrogative question phrase	M	oyaa meeka hoDHAyi kiyalaa hithanavadha?	ඔයා මේක හොඳයි කියලා හිතනවද?	ඔයා මේක හොඳයි කියලා හිතනවද??	Pass	·Question suffix "-dha" is correctly attached.	·   Daily language usage
 							·Interrogative tone is perfectly captured.	·  Interrogative (question)
-							·  Question mark is preserved in the output.	·  S (≤30 characters)
+							·  Question mark is preserved in the output.	·   M (31–299 characters)
 								·   Accuracy validation
-Pos_Fun_0006	Imperative command conversion	S	vahaama enna.	වහාම එන්න.	වහාම එන්න.	Pass	· The urgency of the command is maintained.	· Daily language usage
+Pos_Fun_0006	Imperative command conversion	S	ikmanata yanna  	ඉක්මනට යන්න  	ඉක්මනට යන්න  	Pass	· The urgency of the command is maintained.	· Daily language usage
 							· SThe "Hal" character is applied accurately.	· imperative (command)
 							·Proper phonetical mapping is observed.	· S (≤30 characters)
 								· Accuracy validation
-Pos_Fun_0007	Negative form sentence	S	mama ehema karannee naehae.	මම එහෙම කරන්නේ නැහැ.	මම එහෙම කරන්නේ නැහැ.	Pass	·Negation "naehae" is correctly spelled.	·   Daily language usage
+Pos_Fun_0007	Negative form sentence	S	mama oyaata kathaa karanne naehae.	මම ඔයාට කතා කරන්නේ නැහැ.	මම ඔයාට කතා කරන්නේ නැහැ.	Pass	·Negation "naehae" is correctly spelled.	·   Daily language usage
 							·Auxiliary verb structure is preserved.	·  Negation (negative form)
 							·  Meaning remains unchanged from input.	·  S (≤30 characters)
 								·   Accuracy validation
-Pos_Fun_0008	Common greeting	S	suba udhaeesanak!	සුබ උදෑසනක්!	සුබ උදෑසනක්!	Pass	· . Specific (ඇ) sound is correctly mapped.	· Greeting / request / response
+Pos_Fun_0008	Common greeting	S	suBha sanDhYaavak!	සුභ සන්ධ්‍යාවක්!	සුභ සන්ධ්‍යාවක්!	Pass	· . Specific "aa" sound is correctly mapped.	· Greeting / request / response
 							· Exclamation mark is correctly rendered.	· Simple sentence
 							·Greeting is linguistically accurate.	· S (≤30 characters)
 								· Accuracy validation
-Pos_Fun_0009	Polite request phrase	M	karuNaakaralaa eka poddak balanna.	කරුණාකරලා ඒක පොඩ්ඩක් බලන්න.	කරුණාකරලා ඒක පොඩ්ඩක් බලන්න.	Pass	·"N" (ණ) is used correctly.	·   Greeting / request / response
+Pos_Fun_0009	Polite request phrase	M	karuNaakaralaa mata poddak udhav karanna.	කරුණාකරලා මට පොඩ්ඩක් උදව් කරන්න. .	කරුණාකරලා මට පොඩ්ඩක් උදව් කරන්න. 	Pass	·"N" (ණ) is used correctly.	·   Greeting / request / response
 							·Polite tone of the sentence is preserved.	·  Imperative (command)
 							·  Word boundaries are maintained accurately.	·  M (31–299 characters)
 								·   Accuracy validation
-Pos_Fun_0010	Apology social response	M	samaavenna, eeka athvaeradhiimak.	සමාවෙන්න, ඒක අත්වැරදීමක්.	සමාවෙන්න, ඒක අත්වැරදීමක්.	Pass	· Comma is correctly placed between phrases.	· Greeting / request / response
-							· Complex word "athvaeradhiimak" is converted well.	· Simple sentence
+Pos_Fun_0010	Apology social response	M	samaavenna, mama hithuve naethuva kivvaa.	සමාවෙන්න, මම හිතුවෙ නැතුව කිව්වා.	සමාවෙන්න, මම හිතුවෙ නැතුව කිව්වා.	Pass	· Comma is correctly placed between phrases.	· Greeting / request / response
+							· Complex word "samaavenna" is converted well.	· Simple sentence
 							·Apologetic intent is clearly communicated.	· M (31–299 characters)
 								· Accuracy validation
-Pos_Fun_0011	Informal slang usage	S	eeyi, ooka dhiyan.	ඒයි, ඕක දියන්.	ඒයි, ඕක දියන්.	Pass	·Informal interjection "eeyi" is mapped correctly.	·   Slang / informal language
-							·Colloquial verb "dhiyan" is preserved.	·  Imperative (command)
+Pos_Fun_0011	Informal slang usage	S	meka dhaapan, kohomahari.	මෙක දාපන්, කොහොමහරි.  	මෙක දාපන්, කොහොමහරි.  	Pass	·Informal interjection "meka" is mapped correctly.	·   Slang / informal language
+							·Colloquial verb "දාපන්" is preserved.	·  Imperative (command)
 							·  Slang nuances are accurately represented.	·  S (≤30 characters)
 								·   Accuracy validation
-Pos_Fun_0012	Everyday emotional expression	S	mata nidhimathayi.	මට නිදිමතයි.	මට නිදිමතයි.	Pass	· Adjective for "sleepy" is spelled accurately.	· Daily language usage
+Pos_Fun_0012	Everyday emotional expression	S	mata dhukayi.	මට දුකයි.	මට දුකයි.	Pass	· Adjective for "sad" is spelled accurately.	· Daily language usage
 							· Phonetic flow of the word is maintained.	· Simple sentence
 							·First-person pronoun is correctly mapped.	· S (≤30 characters)
 								· Accuracy validation
-Pos_Fun_0013	Word collocation pattern	S	gihin enna.	ගිහින් එන්න.	ගිහින් එන්න.	Pass	·Two-word idiomatic phrase remains intact.	·   Word combination / phrase pattern
+Pos_Fun_0013	Word collocation pattern	S	aayeth enna .	ආයෙත් එන්න .	ආයෙත් එන්න .	Pass	·Two-word idiomatic phrase remains intact.	·   Word combination / phrase pattern
 							·Spelling of both words is standard.	·  Verb-subject agreement
 							·  Space between words is correctly handled.	·  S (≤30 characters)
 								·   Accuracy validation
@@ -55,15 +55,15 @@ Pos_Fun_0014	Emphasis through repetition	S	hari hari	හරි හරි	හර�
 							· Both occurrences of the word are identical.	· Simple sentence
 							·Character mapping is consistent	· S (≤30 characters)
 								· Accuracy validation
-Pos_Fun_0015	Past tense daily usage	M	mama iiyee gedhara giyaa.	මම ඊයේ ගෙදර ගියා.	මම ඊයේ ගෙදර ගියා.	Pass	·Time "iiyee" is converted correctly.	·   Daily language usage
+Pos_Fun_0015	Past tense daily usage	M	mama iiyee paarata giyaa.	මම ඊයේ පාරට ගියා.	මම ඊයේ පාරට ගියා.	Pass	·Time "iiyee" is converted correctly.	·   Daily language usage
 							·Past tense verb "giyaa" is accurately mapped.	·  Past tense
 							·  Sentence structure follows Sinhala syntax.	·  M (31–299 characters)
 								·   Accuracy validation
-Pos_Fun_0016	Future tense daily usage	M	api iiLaGa sathiyee yamu.	අපි ඊළඟ සතියේ යමු.	අපි ඊළඟ සතියේ යමු.	Pass	· Future-oriented verb "yamu" is correctly used.	· Daily language usage
-							· character (ඟ) in "iiLaGa" is accurate.	· Future tense
-							·Possessive "sathiyee" is correctly formed.	· M (31–299 characters)
+Pos_Fun_0016	Future tense daily usage	S	api heta yamu.	අපි හෙට  යමු.	අපි හෙට  යමු.	Pass	· Future-oriented verb "yamu" is correctly used.	· Daily language usage
+							· Possessive "heta" is correctly formed.	· Future tense
+								· S (≤30 characters)
 								· Accuracy validation
-Pos_Fun_0017	Plural pronoun variation	S	oyaalaa enavadha?	ඔයාලා එනවාද?	ඔයාලා එනවාද?	Pass	·Plural "you" is correctly identified.	·   Daily language usage
+Pos_Fun_0017	Plural pronoun variation	S	oyaalaa gihin innavadha?  	ඔයාලා ගිහින් ඉන්නවද?  	ඔයාලා ගිහින් ඉන්නවද?  	Pass	·Plural "you" is correctly identified.	·   Daily language usage
 							·Question marker is joined seamlessly.	·  Pronoun variation
 							·  Meaning is preserved for the group.	·  S (≤30 characters)
 								·   Accuracy validation
@@ -71,27 +71,27 @@ Pos_Fun_0018	Mixed technical terms	M	WiFi password eka dhenna.	WiFi password එ
 							· Sinhala article "eka" is correctly attached.	· Imperative (command)
 							·Verb "dhenna" is correctly transliterated.	· M (31–299 characters)
 								· Robustness validation
-Pos_Fun_0019	English place name usage	M	siiyaa Colombo yanna hadhannee.	සීයා Colombo යන්න හදන්නේ.	සීයා Colombo යන්න හදන්නේ.	Pass	·Place name "Colombo" is preserved correctly.	·   Names / places / common English words
+Pos_Fun_0019	English place name usage	S	malli  Colombo yanna hadhannee.	මල්ලි  Colombo යන්න හදන්නේ.	මල්ලි  Colombo යන්න හදන්නේ.	Pass	·Place name "Colombo" is preserved correctly.	·   Names / places / common English words
 							·Relation between noun and verb is maintained.	·  Present tense
-							·  Spelling of "siiyaa" is accurate.	·  M (31–299 characters)
+							·  Spelling of "මල්ලි " is accurate.	·  S (≤30 characters)
 								·   Robustness validation
 Pos_Fun_0020	Technical abbreviations	S	NIC eka dhenna.	NIC එක දෙන්න.	NIC එක දෙන්න.	Pass	· Uppercase abbreviation is preserved as is.	· Names / places / common English words
 							· Following Sinhala word is properly spaced.	· Imperative (command)
 							·Intent of the request remains clear.	· S (≤30 characters)
 								· Robustness validation
-Pos_Fun_0021	Currency and numbers	S	Rs. 5343	Rs. 5343	Rs. 5343	Pass	·Numbers are not altered or corrupted.	·   Punctuation / numbers
+Pos_Fun_0021	Currency and numbers	S	Rs. 5345	Rs. 5345	Rs. 5345	Pass	·Numbers are not altered or corrupted.	·   Punctuation / numbers
 							·Prefix "Rs." is maintained accurately.	·  Simple sentence
 							·  Spacing around characters is consistent.	·  S (≤30 characters)
 								·   Accuracy validation
-Pos_Fun_0022	Extra space handling	M	mama gedhara yanavaa.	මම ගෙදර යනවා.	මම ගෙදර යනවා.	Pass	·Multiple spaces are collapsed correctly.	·   Formatting (spaces / line breaks
+Pos_Fun_0022	Extra space handling	S	mama  paasalata    yanavaa.	මම පාසලට  යනවා.	මම පාසලට  යනවා.	Pass	·Multiple spaces are collapsed correctly.	·   Formatting (spaces / line breaks
 							·Resulting sentence script is clean.	·  Simple sentence
-							·  No extra Sinhala characters are generated.	·  M (31–299 characters)
+							·  No extra Sinhala characters are generated.	·  S (≤30 characters)
 								·   Robustness validation
 Pos_Fun_0023	Multiple punctuations	S	ela machan! supiri!!	එල මචන්! සුපිරි!! යනවා.	එල මචන්! සුපිරි!! යනවා.	Pass	·Colloquial term "ela" is accurately converted.	·   Slang / informal language
 							·Multiple exclamation marks are preserved.	·  Simple sentence
 							·  Friendly, informal tone is maintained.	·  S (≤30 characters)
 								·   Accuracy validation
-Pos_Fun_0024	Long complex paragraph	L	dhitvaa suLi kuNaatuva samaGa...	දිට්වා සුළි කුණාටුව සමඟ...	දිට්වා සුළි කුණාටුව සමඟ...	Pass	·System handles high character count.	·   Formatting (spaces / line breaks)
+Pos_Fun_0024	Long complex paragraph	L	ditvaa suLi kuNaatuvath samaGA aethi vuu aapadhaa thaththvaya heethuven maarga sQQvarDhana aDhikaariyata ayath maarga 430 k pamaNa vinaasha vii aethi athara, eevaayee muLu dhiga kiloomiitar 300 k pamaNa bava amaathYA bimal rathnaayaka mahathaa paevasiiya.	ඩිට්වා සුළි කුණාටුවත් සමඟ ඇති වූ ආපදා තත්ත්වය හේතුවෙන් මාර්ග සංවර්ධන අධිකාරියට අයත් මාර්ග 430 ක් පමණ විනාශ වී ඇති අතර, ඒවායේ මුළු දිග කිලෝමීටර් 300 ක් පමණ බව අමාත්‍ය බිමල් රත්නායක මහතා පැවසීය.	ඩිට්වා සුළි කුණාටුවත් සමඟ ඇති වූ ආපදා තත්ත්වය හේතුවෙන් මාර්ග සංවර්ධන අධිකාරියට අයත් මාර්ග 430 ක් පමණ විනාශ වී ඇති අතර, ඒවායේ මුළු දිග කිලෝමීටර් 300 ක් පමණ බව අමාත්‍ය බිමල් රත්නායක මහතා පැවසීය.	Pass	·System handles high character count.	·   Formatting (spaces / line breaks)
 							·Complex signs are correct.	·  Complex sentence
 							·  Overall text integrity is kept.	·  L (≥300 characters)
 								·   Robustness validation
@@ -107,10 +107,10 @@ Neg_Fun_0002	Slang not supported	S	ela machan!	එල මචං!	එල මච�
 							·mistranslates slang	· Exclamation
 							·  Output loses intended meaning	·  S (≤30 characters)
 								·   Robustness validation
-Neg_Fun_0003	Input with alternating Sinhala and English	M	mama went to gedhara and met amma	මම ගෙදර ගියා සහ අම්මාව හමුවුණා	මම went to ගෙදර and met අම්ම	Fail	· Mixed Singlish + English	·   Typographical errors
-							·Compound sentence	·  Simplesentence
-							· M (31–299 characters)	·    S (≤30 characters)
-							Robustness validation	·   Robustness validation
+Neg_Fun_0003	Input with alternating Sinhala and English	S	mama went to gedhara and met amma	මම ගෙදර ගියා සහ අම්මාව හමුවුණා	මම went to ගෙදර and met අම්ම	Fail	· sentence not correct	·   Typographical errors
+							·Mieaning not correct	·  Simple sentence
+								·    S (≤30 characters)
+								·   Robustness validation
 Neg_Fun_0004	Sentence with broken transliteration logic	S	mama sunaggu vuNaa	මම සුනාග්ගු වුණා	මම සුනග්ගු වුණා	Fail	· “sunaggu” misinterpreted	·   Daily language usage
 							· Output spelling is incorrect	·   Complex sentence
 							· Meaning is distorted	·   S (≤30 characters)
@@ -139,7 +139,7 @@ Neg_Fun_0010	Sentence with mixed Sinhala and English idiom	M	oyaage kathaa ahala
 							· System fails to interpret idiomatic meaning.	· Complex sentence
 							·Output becomes confusing and loses emotional context.	·  M (31–299 characters)
 								· Robustness validation
-Pos_UI_0001	Clear button resets input and output fields	S	mata bath oonee.	මට බත් ඕනේ.	Sinhala output appears correctly while typing.	Pass	·Real-time output is displayed correctly while typing..	·   Empty/cleared input handling
+Pos_UI_0001	Clear button resets input and output fields	S	mata nidhaa ganna oonee.	මට නිදා ගන්න ඕනේ.	Sinhala output appears correctly while typing.	Pass	·Real-time output is displayed correctly while typing..	·   Empty/cleared input handling
 							·Clear button functions as expected with no delay..	·  Simple sentence
 							·  UI remains responsive and stable throughout the interaction.	·  S (≤30 characters)
 								· Real-time output update behavior
