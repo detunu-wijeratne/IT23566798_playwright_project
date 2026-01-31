@@ -93,8 +93,11 @@ ITPM ASSIGNMENT
 ## Notes
 
 : Tests execute on the Chromium browser by default.
+
 : An HTML test report is automatically generated after execution.
+
 : Screenshots are captured on test failures to assist with debugging.
+
 : The framework is designed to be scalable for future test enhancements.
 
 
